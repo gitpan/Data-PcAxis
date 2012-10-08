@@ -28,7 +28,7 @@ requires:
   autodie: 0
   namespace::autoclean: 0
   perl: 5.010
-version: 0.0.3
+version: 0.0.4
 x_BuiltWith:
   modules:
     Carp: 1.26
