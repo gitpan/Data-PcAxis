@@ -1,6 +1,6 @@
 package Data::PcAxis;
 {
-  $Data::PcAxis::VERSION = '0.0.4';
+  $Data::PcAxis::VERSION = '0.0.5';
 }
 
 # ABSTRACT: A simple interface to the PC-Axis file format
@@ -335,7 +335,7 @@ Data::PcAxis - A simple interface to the PC-Axis file format
 
 =head1 VERSION
 
-version 0.0.4
+version 0.0.5
 
 =head1 SYNOPSIS
 
