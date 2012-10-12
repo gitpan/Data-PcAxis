@@ -1,6 +1,6 @@
 package Data::PcAxis;
 {
-  $Data::PcAxis::VERSION = '0.0.5';
+  $Data::PcAxis::VERSION = '0.0.6';
 }
 
 # ABSTRACT: A simple interface to the PC-Axis file format
@@ -10,7 +10,7 @@ use namespace::autoclean;
 use Moose::Util::TypeConstraints;
 use MooseX::Types::Path::Class;
 
-use 5.010;
+#use 5.010;
 use autodie;
 use List::AllUtils qw/reduce any firstidx indexes/;
 use Carp;
@@ -335,7 +335,7 @@ Data::PcAxis - A simple interface to the PC-Axis file format
 
 =head1 VERSION
 
-version 0.0.5
+version 0.0.6
 
 =head1 SYNOPSIS
 
