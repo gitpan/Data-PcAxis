@@ -1,8 +1,5 @@
 package Data::PcAxis;
-{
-  $Data::PcAxis::VERSION = '0.0.6';
-}
-
+$Data::PcAxis::VERSION = '0.0.7';
 # ABSTRACT: A simple interface to the PC-Axis file format
 
 use Moose;
@@ -306,11 +303,11 @@ sub _build_data {
 
         if ($line =~ /^DATA=/) {
             $dataflag = 1;
-            next DATAROW;
         }
         next DATAROW unless $dataflag == 1;
 
         chomp $line;
+	$line =~ s/DATA=//;
         $line =~ s/;//;
         my @row = split /\s+/, $line;
         push @data, @row;
@@ -329,13 +326,15 @@ __PACKAGE__->meta->make_immutable;
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Data::PcAxis - A simple interface to the PC-Axis file format
 
 =head1 VERSION
 
-version 0.0.6
+version 0.0.7
 
 =head1 SYNOPSIS
 
